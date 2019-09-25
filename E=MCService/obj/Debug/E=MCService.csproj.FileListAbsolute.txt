@@ -1,0 +1,7 @@
+C:\IFM2 Pracs\IFM2B\Group\Service\E=MCService\E=MCService\bin\E=MCService.dll.config
+C:\IFM2 Pracs\IFM2B\Group\Service\E=MCService\E=MCService\bin\E=MCService.dll
+C:\IFM2 Pracs\IFM2B\Group\Service\E=MCService\E=MCService\bin\E=MCService.pdb
+C:\IFM2 Pracs\IFM2B\Group\Service\E=MCService\E=MCService\obj\Debug\E=MCService.csprojAssemblyReference.cache
+C:\IFM2 Pracs\IFM2B\Group\Service\E=MCService\E=MCService\obj\Debug\E=MCService.csproj.CoreCompileInputs.cache
+C:\IFM2 Pracs\IFM2B\Group\Service\E=MCService\E=MCService\obj\Debug\E=MCService.dll
+C:\IFM2 Pracs\IFM2B\Group\Service\E=MCService\E=MCService\obj\Debug\E=MCService.pdb
