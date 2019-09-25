@@ -13,16 +13,21 @@ namespace E_MCService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class UserService : IUser
     {
+
         //change the dataTable context to the required databse that is used
         DataTableDataContext db = new DataTableDataContext();
+
+        
 
         //check is is valid user
         public int Login(string userName, string passWord)
         {
+            
             var user = (from u in db.Users
                         where u.email.Equals(userName) || u.email.Equals(userName) &&
                         u.isActive.Equals(1) &&
-                        u.password.Equals(passWord)
+
+                        u.password.Equals(EncryptionClass.HashPassword(passWord))//encryopt hash the password 
                       
                         select u).FirstOrDefault();
 
@@ -47,7 +52,7 @@ namespace E_MCService
                 email = user.email,
                 first_name = user.first_name,
                 last_name = user.last_name,
-                password = user.password,
+                password = EncryptionClass.HashPassword(user.password),//hash the password for storage
                 contact_number = user.contact_number,
                 created_at = user.created_at,
                 updated_at = user.updated_at,

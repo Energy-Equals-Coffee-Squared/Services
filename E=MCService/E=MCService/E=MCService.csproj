@@ -72,6 +72,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataTable.dbml</DependentUpon>
     </Compile>
+    <Compile Include="EncryptionClass.cs" />
     <Compile Include="IProductService.cs" />
     <Compile Include="ProductClass.cs" />
     <Compile Include="ProductService.svc.cs">
